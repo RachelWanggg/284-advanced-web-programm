@@ -1,0 +1,17 @@
+class MyClass
+  attr_accessor :total, :average
+
+  def initialize()
+    @total, @numbers, @average  = 0, [], 0
+  end
+
+  def <<(n)
+    @numbers << n
+    @total = @numbers.sum
+    @average  = @total.to_f / @numbers.size
+    self
+  end
+end
+
+obj = MyClass.new
+puts (obj << 1 << 2 << 3 << 4 << 5 << 15).average

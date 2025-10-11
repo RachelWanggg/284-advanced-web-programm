@@ -1,0 +1,14 @@
+#require 'sinatra'
+#include <stdio>
+class Wheel
+#@rim
+  def initialize(r, t)
+    @rim, @tire = r, t
+  end
+
+  def diameter
+    rim = 5
+    #rim + 2*tire
+    @rim + 2*@tire
+  end
+end

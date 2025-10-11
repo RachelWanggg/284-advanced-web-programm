@@ -1,0 +1,22 @@
+class CompressSentence
+  attr_accessor :words
+  
+  def initialize(sentc)
+    duplicate_words = sentc.split
+    @words = []
+
+    duplicate_words.each do |word|
+      if @words.include?(word)
+        duplicate_words.pop(word)
+
+      else
+        @words.push(word)
+        self
+      end
+    end
+    self
+  end
+
+  
+
+    
