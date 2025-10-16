@@ -1,0 +1,19 @@
+class TinyRouter
+  attr_reader :routes
+
+  def initialize()
+    @routes = {}
+  end
+
+  def get(route, &block)
+
+  def post(route, &block)
+  
+  def register(verb, route, &block):
+    if verb == "get": get(route, &block)
+    else post(route, &block)
+    
+  def call(verb,route)
+    for route  in routes: 
+      if route[verb] == verb & route[route] == route:
+        p block(Proc)
